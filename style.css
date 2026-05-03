@@ -6,29 +6,27 @@
 }
 
 body {
-  background: #f5f7fa;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
   color: #111;
 }
 
+/* NAV */
 .nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
-  background: white;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
+/* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
@@ -37,34 +35,53 @@ body {
   margin-bottom: 30px;
 }
 
+/* BUTTON */
 .btn {
   padding: 12px 24px;
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   cursor: pointer;
-  background: #e5e7eb;
 }
 
 .btn.primary {
   background: black;
   color: white;
+  transition: 0.3s;
 }
 
+.btn.primary:hover {
+  transform: scale(1.05);
+}
+
+/* FEATURES */
 .features {
   display: flex;
   gap: 20px;
-  padding: 40px;
   justify-content: center;
+  padding: 40px;
 }
 
 .card {
-  background: white;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
   padding: 30px;
-  border-radius: 16px;
+  border-radius: 20px;
   width: 250px;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
+/* AURA */
+.aura {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.aura h2 {
+  font-size: 32px;
+}
+
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 40px;
