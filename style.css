@@ -71,21 +71,7 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* AURA */
-.aura {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.aura h2 {
-  font-size: 32px;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 40px;
-  /* DASHBOARD */
+/* DASHBOARD */
 .dashboard {
   padding: 100px 20px;
   text-align: center;
@@ -106,10 +92,10 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  width: 200px;
-  background: #111;
+  width: 220px;
+  background: linear-gradient(180deg, #111, #222);
   color: white;
-  padding: 20px;
+  padding: 25px;
 }
 
 .sidebar h3 {
@@ -121,8 +107,13 @@ body {
 }
 
 .sidebar li {
-  margin-bottom: 10px;
-  opacity: 0.8;
+  margin-bottom: 12px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  opacity: 1;
 }
 
 /* MAIN */
@@ -140,28 +131,6 @@ body {
 }
 
 .stat {
-  background: #f5f7fa;
-  padding: 20px;
-  border-radius: 12px;
-  flex: 1;
-}
-  .sidebar {
-  width: 220px;
-  background: linear-gradient(180deg, #111, #222);
-  color: white;
-  padding: 25px;
-}
-
-.sidebar li {
-  margin-bottom: 12px;
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-.sidebar li:hover {
-  opacity: 1;
-}
-  .stat {
   background: rgba(245,247,250,0.8);
   padding: 20px;
   border-radius: 16px;
@@ -172,19 +141,10 @@ body {
 .stat:hover {
   transform: translateY(-5px);
 }
-  color: #777;
-}
-.dashboard {
-  animation: fadeUp 1s ease;
-}
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: #777;
 }
